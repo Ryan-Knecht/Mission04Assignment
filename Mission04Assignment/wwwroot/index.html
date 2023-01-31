@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ryan's Website</title>
+
+    <!--The new icon-->
+    <link rel="shortcut icon" href="img/EGA.jfif" />
+
+    <!--The css stylsheet-->
+    <link href="css/default.css" rel="stylesheet" />
+
+    <!--The bootstrap-->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Preferred name: Ryan Knecht</h1>
+
+    <!-- This is the picture of me -->
+    <img src="img/Arches.jpg" />
+
+    <!--This is what I want out of the course-->
+    <p>What I want to get out of this course is a good background knowledge of how to develop web applications. I consider myself fairly entrepreneurial and want to use the skills I learn in this course to further the goal of being my own boss.</p>
+    <br />
+
+    <!--My top 3 jobs-->
+    <p>My top 3 potential jobs: </p>
+    <ul>
+        <li>1) Digitial Forensic Investigator</li>
+        <li>2) Entrepreneur </li>
+        <li>3) Project Management</li>
+    </ul>
+
+    <!--The grade input / claculator-->
+    <form>
+        <div class="form-group">
+            <fieldset>
+                <legend>Grade Calculator</legend>
+
+                <label>Assignments</label><br />
+                <input id="assignments" type="number" step="0.1" min="0.00" max="100.00" /><br />
+
+                <label>Group Projects</label><br />
+                <input id="group_projects" type="number" step="0.1" min="0.00" max="100.00" /><br />
+
+                <label>Quizzes</label><br />
+                <input id="quizzes" type="number" step="0.1" min="0.00" max="100.00" /><br />
+
+                <label>Midterm Exam</label><br />
+                <input id="midterm" type="number" step="0.1" min="0.00" max="100.00" /><br />
+
+                <label>Final Exam</label><br />
+                <input id="final" type="number" step="0.1" min="0.00" max="100.00" /><br />
+
+                <label>Intex</label><br />
+                <input id="intex" type="number" step="0.1" min="0.00" max="100.00" /><br /><br />
+                <input id="btnSend" type="button" value="Submit" />
+            </fieldset>
+        </div>
+    </form>
+    <br />
+    <p id="output"></p> 
+
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="js/Java.js"></script>
+</body>
+</html>
