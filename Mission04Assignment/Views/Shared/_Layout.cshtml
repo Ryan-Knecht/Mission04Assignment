@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+
+    <!--The dynamic title per page-->
+    <title>@ViewData["Title"]</title>
+
+    <!--The new icon-->
+    <link rel="shortcut icon" href="~/img/EGA.jfif" />
+
+    <!--The css stylsheet-->
+    <link href="~/css/default.css" rel="stylesheet" />
+
+    <!--The bootstrap-->
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+
+<body>
+    <!-- The nav-bar -->
+    <nav>
+        <a asp-controller="Blah" asp-action="Index">Home</a>
+        <a asp-controller="Blah" asp-action="GradeCalc">Calculator</a>
+    </nav>
+
+    <!--Dynamic body-->
+    <div>
+        @RenderBody()
+    </div>
+
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+
+</body>
+
+</html>

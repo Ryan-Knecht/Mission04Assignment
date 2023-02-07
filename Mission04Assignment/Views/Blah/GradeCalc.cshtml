@@ -1,0 +1,53 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Grade Calculator";
+}
+
+@model CalcModel;
+
+
+<!--The grade input / claculator  Has inputs for validation-->
+<form method="post">
+    <div class="form-group">
+        <fieldset>
+            <legend>Grade Calculator</legend>
+
+            <label>Assignments</label><br />
+            <input id="assignments" asp-for="Assignments"  step="0.1"  /><br />
+            <span asp-validation-for="Assignments"></span>
+
+            <label>Group Projects</label><br />
+            <input id="group_projects" asp-for="Group"  step="0.1"  /><br />
+            <span asp-validation-for="Group"></span>
+
+            <label>Quizzes</label><br />
+            <input id="quizzes" asp-for="Quizzes" step="0.1"  /><br />
+            <span asp-validation-for="Quizzes"></span>
+
+            <label>Midterm Exam</label><br />
+            <input id="midterm" asp-for="Midterm"  step="0.1"  /><br />
+            <span asp-validation-for="Midterm"></span>
+
+            <label>Final Exam</label><br />
+            <input id="final" asp-for="Final" step="0.1"  /><br />
+            <span asp-validation-for="Final"></span>
+
+            <label>Intex</label><br />
+            <input id="intex" asp-for="Intex" step="0.1" /><br /><br />
+            <span asp-validation-for="Intex"></span>
+
+            <br />
+            <br />
+
+            <button id="btnSend" type="submit">Submit</button>
+
+            <br />
+        </fieldset>
+    </div>
+</form>
+<br />
+<p id="output"></p>
+
+<script src="~/js/Java.js"></script>
